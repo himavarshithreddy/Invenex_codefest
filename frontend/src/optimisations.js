@@ -159,7 +159,7 @@ const Optimisation = () => {
 
     const productMap = new Map();
 
-    Object.entries(transferData.recommendations).forEach(([key, value]) => {
+    Object.entries(transferData.transfer_recommendations).forEach(([key, value]) => {
       const matches = key.match(/\('([^']+)', '([^']+)', '([^']+)'\)/);
       if (matches) {
         const [_, product, from, to] = matches;
